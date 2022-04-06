@@ -1,0 +1,10 @@
+[Unit]
+Description = Shell script
+
+[Service]
+WorkingDirectory = /root
+Type=forking
+ExecStart = /bin/bash script.sh start
+
+[Install]
+WantedBy =  multi-user.target
